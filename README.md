@@ -1,2 +1,49 @@
-# A-Case-Study-Energy-Complexity
-This study analyzes the energy efficiency (E(n)) of MergeSort and QuickSort on Apple M2 architecture. While QuickSort is faster for large datasets (N=50,000), it consumes significantly more energy (3.75 J) than MergeSort (2.50 J) due to higher instantaneous power draw. It highlights the need for energy-aware algorithm selection.
+# Energy Complexity Analysis: MergeSort vs. QuickSort
+This project investigates the energy efficiency of sorting algorithms beyond traditional time complexity, focusing on Energy Complexity (E(n)). It specifically compares MergeSort and QuickSort on modern hardware to determine if the fastest algorithm is always the most "green".
+
+
+
+**Project Overview**
+
+Traditional analysis uses Big-O notation (O(nlogn)) for speed, but this study highlights that energy consumption is the product of Power (P) and Time (t). On an Apple M2 processor, results show that while QuickSort can be faster, it often draws more instantaneous power, making it less energy-efficient in high-volume scenarios.
+
+
+
+
+
+**Key Findings**
+
+Time vs. Energy: For N=50,000 elements, QuickSort was faster (0.083s vs 0.101s) but consumed ~50% more energy (3.75 J vs 2.50 J).
+
+
+
+Resource Intensity: QuickSort exhibits a more aggressive processor load, whereas MergeSort maintains a stable energy profile.
+
+
+Hardware: Benchmarked on an Apple M2 chip using the CodeCarbon library for real-time tracking.
+
+Experimental Data (N=50,000)
+
+Algorithm	Time (s)	Energy (J)
+MergeSort	
+0.1018 
+
+
+2.5032 
+
+
+QuickSort	
+0.0838 
+
+
+3.7498 
+
+
+**Installation & Usage**
+
+Install Dependencies:
+
+you need to install codecarbon library to execute this code. Execute "pip install codecarbon" on the terminal.
+
+
+Author: Yusuf Taha Öncü
