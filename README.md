@@ -33,7 +33,6 @@ On an Apple M2 chip using the CodeCarbon library for real-time tracking.
 
 **Installation & Usage**
 
-**Install Dependencies:**
 
 you need to install codecarbon library to execute this code. Execute "pip install codecarbon" on the terminal.
 
