@@ -13,37 +13,29 @@ Traditional analysis uses Big-O notation (O(nlogn)) for speed, but this study hi
 
 **Key Findings**
 
-Time vs. Energy: For N=50,000 elements, QuickSort was faster (0.083s vs 0.101s) but consumed ~50% more energy (3.75 J vs 2.50 J).
+**Time vs. Energy:** 
+
+For N=50,000 elements, QuickSort was faster (0.083s vs 0.101s) but consumed ~50% more energy (3.75 J vs 2.50 J).
 
 
 
-Resource Intensity: QuickSort exhibits a more aggressive processor load, whereas MergeSort maintains a stable energy profile.
+**Resource Intensity:** 
+
+QuickSort exhibits a more aggressive processor load, whereas MergeSort maintains a stable energy profile.
 
 
-Hardware: Benchmarked on an Apple M2 chip using the CodeCarbon library for real-time tracking.
+**Hardware: Benchmarked** 
 
-Experimental Data (N=50,000)
-
-Algorithm	Time (s)	Energy (J)
-MergeSort	
-0.1018 
+On an Apple M2 chip using the CodeCarbon library for real-time tracking.
 
 
-2.5032 
-
-
-QuickSort	
-0.0838 
-
-
-3.7498 
 
 
 **Installation & Usage**
 
-Install Dependencies:
+**Install Dependencies:**
 
 you need to install codecarbon library to execute this code. Execute "pip install codecarbon" on the terminal.
 
 
-Author: Yusuf Taha Öncü
+**Author:** Yusuf Taha ÖNCÜ
